@@ -1,0 +1,118 @@
+*{ /* asterisco serve para aplicar a tudo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; /*alinha o eixo horizontal */
+    align-items: center; /*alinha o eixo vertical */
+    background-image: url(" https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY5MTQyMTc2NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600 ");
+}
+
+.titulo{
+    background-color: #000000;
+    opacity: 0.7;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 45%;
+    margin-top: -480px;
+    margin-right: 9px;
+    font-size: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+    
+.caixa-maior{
+    background: #000000;
+    opacity: 0.7; /*é a transparencia */
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 480px;
+    height: 55%;
+    position: fixed;
+}
+
+.input-cidade{
+    border: none;
+    outline: none; /*é aquela linha da borda */
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #7c7c7c7b;
+    color: #ffffff;
+    width: calc(100% - 50px);
+    font-size: 20px;
+    text-align: center;
+}
+
+.botao-busca{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #7c7c7c7b;
+    cursor: pointer; /*Quando o mouse estiver em cima, aparecer a "mãozinha" */
+    float: right;
+}
+
+.imagem-busca{
+    width: 25px;
+}
+
+.caixa-media{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.cidade{
+    color: white;
+    font-size: 25px;
+    font-weight: 300; /* para a letra ficar mais fina */
+    text-decoration: underline;
+}
+
+.temp{
+    font-size: 40px;
+    color: white;
+    margin-top: 15px;
+    font-family: 'Handjet', cursive;
+}
+
+.caixa-menor{
+    margin-top: 5px;
+}
+
+.texto-previsao{
+    color: white; 
+    text-transform: capitalize; /*para deixar a primeira letra sempre maíuscula */   
+}
+
+.umidade{
+    color: white;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .titulo{
+        margin-top: -570px;
+        padding: 2px;
+        width: 90%;
+        font-size: 35px;
+        margin-right: 0%;
+    }
+
+    .caixa-maior{
+        padding: 20px;
+        width: 90%;
+        max-width: 400px;
+        height: 50%;
+        position: fixed;
+    }
+}
